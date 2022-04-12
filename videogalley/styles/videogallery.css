@@ -1,0 +1,92 @@
+#nav_list {
+    float:left;
+    width: 15%;
+    margin: 3em 0 0 2em;
+    position: sticky;
+    top: 70px;
+}
+#nav_list ul {
+    list-style: none;
+}
+#nav_list ul li {
+    margin-bottom: 1em; 
+    background-color: #808080;
+    border: 3px ridge white;
+    border-radius: 15px;
+    margin-right: .25em;
+    transition: all .5s;
+}
+#nav_list ul li:hover {
+    margin-left: .25em;
+    margin-right: 0;
+}
+#nav_list ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 1em;
+    color: white;
+}
+#nav_list ul li a:visited {
+    color: white;
+}
+#nav_list ul li a:hover {
+    color: white;
+    background-image: linear-gradient(to right, yellow, green, blue, red);
+    border-radius: 15px;
+}
+
+section {
+    float: left;
+    width: 70%;
+    margin: 2em auto;
+}
+
+article {
+    width: 75%;
+    border: 3px solid white;
+    background-color: maroon;
+    margin-bottom: 1.5em;
+    margin: .75em auto;
+    padding: 30px auto;
+    border-radius: 15px;
+}
+
+article h4 {
+    font-size: 150%;
+    color: white;
+    padding: 15px 0 15px 1em;
+}
+
+.videowrapper {
+    width: 75%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 1em auto;
+    border: 6px ridge #808080;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    #nav_list {
+        display: none;
+    }
+    section {
+        float: none;
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+    .videowrapper {
+        width: 100%;
+        border: none;
+    }
+}

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clerfix ::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Righteous';
+    background-image: url("../images/backgroundimage.jpg");
+    background-color: rgba(0,0,0,.5);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: white;
+    background-image: linear-gradient(to right, yellow, green, blue, red);
+    padding: 3em 0;
+    border-bottom: 5px ridge white;
+}
+header h2 {
+    font-size: 350%;
+    padding-top: 12px;
+    color: black;
+    text-shadow: 5px 5px 20px white, -5px 5px 20px white, 5px -5px 20px white, -5px -5px 20px white;
+} 
+#logoimage {
+    max-width: 100px;
+    width: 100%;
+    float: left;
+    margin:0 2em;
+}
+
+#nav_menu {
+    margin-bottom: 32px;
+}
+
+/* Container holding the image and the text */
+#discription p{
+    margin-left: 1em;
+}
+#discription h2 {
+    margin-top: 32px;
+}
+#discription p {
+    margin: 16px 0 0 1em;
+}
+#homeimage img {
+    max-width: 700px;
+    width: 100%;
+}
+
+#cornerbtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 5px;
+    bottom: 50px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid black;
+    outline: none; /* Remove outline */
+    font-weight: bold;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: .5em .5em;
+    margin: 0 1em 3px 0;
+    font-family: 'Nova Square', cursive;
+    font-size: 100%;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    transition: all .5s;
+}
+#cornerbtn:hover {
+    background-color: rgba(0,0,0,1);
+    color: red;
+    border: 1px solid red;
+}
+footer {
+    clear: both;
+    background-color: white;
+    background-image: linear-gradient(to left, yellow, green, blue, red);
+    padding: 2em 0;
+    border-top: 3px ridge white;
+}
+footer p {
+    text-align: center;
+    font-size: 80%;
+    color: white;
+}
+footer img {
+    max-width: 80px;
+    display: block;
+    margin: .5em auto;
+}
+
+@media only screen and (max-width: 800px) {
+    header h2 {
+        font-size: 250%;
+        text-align: center;
+    }
+    #logoimage {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
